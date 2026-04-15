@@ -431,14 +431,16 @@
                     </div>
                   </div>
                   
+                  <!-- 微信收款码弹窗（正确图片：wechat_pay.png） -->
                   <div id="wechat_modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; align-items:center; justify-content:center;" onclick="this.style.display='none'">
                     <div style="background:#fff; padding:24px; border-radius:16px; max-width:320px; text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.2);" onclick="event.stopPropagation()">
                       <h4 style="margin:0 0 16px; font-size:18px; color:#07C160; font-weight:bold;">微信收款码</h4>
-                      <img src="static/picture/alipay_pay.png" style="width:100%; max-width:240px; border-radius:8px;">
+                      <img src="static/picture/wechat_pay.png" style="width:100%; max-width:240px; border-radius:8px;">
                       <p style="margin-top:16px; font-size:13px; color:#999;">点击空白关闭</p>
                     </div>
                   </div>
 
+                  <!-- 支付宝收款码弹窗（正确图片：alipay_pay.png） -->
                   <div id="alipay_modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; align-items:center; justify-content:center;" onclick="this.style.display='none'">
                     <div style="background:#fff; padding:24px; border-radius:16px; max-width:320px; text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.2);" onclick="event.stopPropagation()">
                       <h4 style="margin:0 0 16px; font-size:18px; color:#1677FF; font-weight:bold;">支付宝收款码</h4>
@@ -466,6 +468,14 @@
         </div>
       </section>
 </section>
+
+<script>
+setTimeout(function() {
+  if (window.location.hash.includes('Contact')) {
+    document.getElementById('payArea').style.display = 'block';
+  }
+}, 100);
+</script>
 
 <script>
 // 超级稳定版：只要链接带 #Contact 就强制显示付款按钮
