@@ -1,0 +1,14 @@
+<svg width="300" height="50" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+  <text 
+    x="0" 
+    y="40" 
+    font-size="32" 
+    font-family="inherit, sans-serif"
+    fill="black" 
+    font-weight="bold"
+    letter-spacing="1.5">
+    不死鸟工作室
+  </text>
+
+  <path d="M214 29L223.5 32L231.5 24L241.5 31L252 29L247.5 14.5L231.5 19.5L222.5 14.5L213 16L214 29Z" fill="#F1A501"/>
+</svg>
